@@ -16,3 +16,17 @@ docker run --rm --env FILE_AGE="15" -v $(pwd)/app/config/:/app/config/ s3-rotati
 # Requeriments for docker
 
 envoriment with FILE_AGE and volume with bucket.yaml on app/config
+
+## bucket.yaml
+
+```yaml
+type: S3
+config:
+  bucket: "s3teste"
+  endpoint: "http://172.20.175.146:9000"
+  region: "bb"  
+  access_key: "minioadmin"
+  insecure: true
+  signature_version2: true
+  secret_key: "minioadmin"
+```
